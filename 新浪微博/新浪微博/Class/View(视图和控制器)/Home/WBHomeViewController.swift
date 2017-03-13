@@ -19,7 +19,7 @@ class WBHomeViewController: WBBaseViewController {
     /// 加载数据
     override func loadData() {
         
-        print("开始加载数据")
+        print("开始加载数据\(WBNetWorkManager.shard)")
         
         // 模拟‘延时’加载数据 -> dispatch_after
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
@@ -90,13 +90,9 @@ extension WBHomeViewController {
         
         // 注册原型 cell
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        
     }
     
-//    override func setupUI() {
-//        super.setupUI()
-//
-//        
-//    }
 
     
 }

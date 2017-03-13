@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  新浪微博
+//
+//  Created by GDC on 2017/3/13.
+//  Copyright © 2017年 GDC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//新浪微博token
+#define Token "2.00qvd1HEEy97RD0fc577fc07gCPNSC"
+
+#define HomeURL "https://api.weibo.com/2/statuses/home_timeline.json"
+
+#endif /* PrefixHeader_pch */

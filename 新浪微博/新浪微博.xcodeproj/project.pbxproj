@@ -28,6 +28,7 @@
 		6E5F31B41E49AF1E00853B99 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F31B31E49AF1E00853B99 /* WBMessageViewController.swift */; };
 		6E5F31B61E49AF2D00853B99 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F31B51E49AF2D00853B99 /* WBDiscoverViewController.swift */; };
 		6E5F31B81E49AF3C00853B99 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F31B71E49AF3C00853B99 /* WBProfileViewController.swift */; };
+		6E8A5E9C1E76870E004B3300 /* WBNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A5E9B1E76870E004B3300 /* WBNetWorkManager.swift */; };
 		6EA706191E4C590A0053FF72 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA706181E4C590A0053FF72 /* UIScreen+Extension.swift */; };
 		6EF517171E4D8F2100425D6F /* WBVieitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF517161E4D8F2100425D6F /* WBVieitorView.swift */; };
 		6EF517191E4D957100425D6F /* UIlabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF517181E4D957100425D6F /* UIlabel+Extension.swift */; };
@@ -75,10 +76,10 @@
 		6E5F31781E499E5C00853B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E5F317D1E499E5C00853B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5F31821E499E5C00853B99 /* 新浪微博Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新浪微博Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E5F31861E499E5C00853B99 /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ____Tests.swift; sourceTree = "<group>"; };
+		6E5F31861E499E5C00853B99 /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
 		6E5F31881E499E5C00853B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5F318D1E499E5C00853B99 /* 新浪微博UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新浪微博UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E5F31911E499E5C00853B99 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ____UITests.swift; sourceTree = "<group>"; };
+		6E5F31911E499E5C00853B99 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		6E5F31931E499E5C00853B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5F31AB1E49AE4200853B99 /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
 		6E5F31AD1E49AE8C00853B99 /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
@@ -88,6 +89,8 @@
 		6E5F31B51E49AF2D00853B99 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
 		6E5F31B71E49AF3C00853B99 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
 		6E5F31B91E49B0A100853B99 /* Weibo-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Weibo-Bridge.h"; sourceTree = "<group>"; };
+		6E8A5E991E767FB2004B3300 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6E8A5E9B1E76870E004B3300 /* WBNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetWorkManager.swift; sourceTree = "<group>"; };
 		6EA706181E4C590A0053FF72 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		6EF517161E4D8F2100425D6F /* WBVieitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVieitorView.swift; sourceTree = "<group>"; };
 		6EF517181E4D957100425D6F /* UIlabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIlabel+Extension.swift"; sourceTree = "<group>"; };
@@ -209,6 +212,7 @@
 				6E5F31A11E49ADF400853B99 /* Class */,
 				6E5F31781E499E5C00853B99 /* Assets.xcassets */,
 				6E5F317D1E499E5C00853B99 /* Info.plist */,
+				6E8A5E991E767FB2004B3300 /* PrefixHeader.pch */,
 			);
 			path = "新浪微博";
 			sourceTree = "<group>";
@@ -252,6 +256,7 @@
 		6E5F31A31E49ADF400853B99 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				6E8A5E9A1E7686C5004B3300 /* NetWorking */,
 				6E2850501E49B72700A8A6B4 /* Additions */,
 				6E2850511E49B72700A8A6B4 /* Extensions */,
 			);
@@ -318,6 +323,14 @@
 			children = (
 			);
 			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		6E8A5E9A1E7686C5004B3300 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				6E8A5E9B1E76870E004B3300 /* WBNetWorkManager.swift */,
+			);
+			path = NetWorking;
 			sourceTree = "<group>";
 		};
 		6EF517151E4D8EFD00425D6F /* VisitorView */ = {
@@ -530,6 +543,7 @@
 				6E5F31B01E49AEA500853B99 /* WBBaseViewController.swift in Sources */,
 				6EF517171E4D8F2100425D6F /* WBVieitorView.swift in Sources */,
 				6E49AF4B1E4AF10900A9916E /* UIColor+CRAddition.m in Sources */,
+				6E8A5E9C1E76870E004B3300 /* WBNetWorkManager.swift in Sources */,
 				6E5F31B81E49AF3C00853B99 /* WBProfileViewController.swift in Sources */,
 				6E49AF541E4B13AA00A9916E /* NSString+CRAddition.m in Sources */,
 				6E5F31B61E49AF2D00853B99 /* WBDiscoverViewController.swift in Sources */,
@@ -681,6 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = ZL9T7EXTR2;
+				GCC_PREFIX_HEADER = "新浪微博/PrefixHeader.pch";
 				INFOPLIST_FILE = "新浪微博/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -699,6 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = ZL9T7EXTR2;
+				GCC_PREFIX_HEADER = "新浪微博/PrefixHeader.pch";
 				INFOPLIST_FILE = "新浪微博/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
