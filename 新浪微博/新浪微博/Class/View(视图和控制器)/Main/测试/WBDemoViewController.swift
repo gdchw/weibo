@@ -30,13 +30,12 @@ class WBDemoViewController: WBBaseViewController {
 
 extension WBDemoViewController {
     
-    override func setupUI() {
-        super.setupUI()
-        
-        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一页", style: .plain, target: self, action: #selector(nextVC))
-    }
+//    override func setupUI() {
+//        super.setupUI()
+//        
+//        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一页", style: .plain, target: self, action: #selector(nextVC))
+//    }
     
-    
-    
-
 }
+
+

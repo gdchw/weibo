@@ -60,6 +60,7 @@ class WBBaseViewController: UIViewController {
     }
 }
 
+// MARK: - 登录注册的方法
 extension WBBaseViewController {
 
     @objc fileprivate func login() {
@@ -75,7 +76,7 @@ extension WBBaseViewController {
 // MARK: - 设置界面
 extension WBBaseViewController {
     
-    func setupUI() {
+    fileprivate func setupUI() {
         view.backgroundColor = UIColor().cr_random
         
         // 取消自动缩进 - 如果隐藏了导航栏，会缩进 20 个像素
@@ -87,7 +88,7 @@ extension WBBaseViewController {
     }
     
     /// 设置表格视图
-    private func setupTableView() {
+    func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
 
         /// 添加视图到导航视图下方
@@ -125,18 +126,20 @@ extension WBBaseViewController {
         // 添加访客视图的监听方法
         visitorView.loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
         visitorView.registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
+        
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(register))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(login))
     }
     
     /// 创建导航条
     private func setupNavigationBar() {
-        // 1.添加导航条
+
         view.addSubview(navigationBar)
         // 2.将 Item 设置给 bar
         navigationBar.items = [navItem]
-        // 3.设置 navBar 的渲染颜色
         navigationBar.barTintColor = UIColor(red: 231, green: 231, blue: 231, alpha: 0.8)
-        // 4.设置 navBar 的字体颜色
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
+        navigationBar.tintColor = UIColor.orange
     }
 }
 
