@@ -10,6 +10,19 @@ import UIKit
 
 class WBVieitorView: UIView {
 
+    /// 注册按钮
+    lazy var registerButton: UIButton = UIButton(title: "注册",
+                                                             fontSize: 16,
+                                                             color: UIColor.orange,
+                                                             highlightedColor: UIColor.black,
+                                                             backgroundImage: "common_button_white_disable")
+    /// 登录按钮
+    lazy var loginButton: UIButton = UIButton(title: "登录",
+                                                          fontSize: 16,
+                                                          color: UIColor.darkGray,
+                                                          highlightedColor: UIColor.white,
+                                                          backgroundImage: "common_button_white_disable")
+    
     /// 访客视图的信息字典 [imageName / message]
     var visitorInfo:[String: String]? {
         didSet {
@@ -67,18 +80,7 @@ class WBVieitorView: UIView {
                                                  fontSize: 14,
                                                  textColor: UIColor.darkGray)
     
-    /// 注册按钮
-    fileprivate lazy var registerButton: UIButton = UIButton(title: "注册",
-                                                          fontSize: 16,
-                                                          color: UIColor.orange,
-                                                          highlightedColor: UIColor.black,
-                                                          backgroundImage: "common_button_white_disable")
-    /// 登录按钮
-    fileprivate lazy var loginButton: UIButton = UIButton(title: "登录",
-                                                      fontSize: 16,
-                                                      color: UIColor.darkGray,
-                                                      highlightedColor: UIColor.white,
-                                                      backgroundImage: "common_button_white_disable")
+
 }
 
 

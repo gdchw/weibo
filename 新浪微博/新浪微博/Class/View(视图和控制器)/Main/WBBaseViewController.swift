@@ -60,6 +60,18 @@ class WBBaseViewController: UIViewController {
     }
 }
 
+extension WBBaseViewController {
+
+    @objc fileprivate func login() {
+        print("登录")
+    }
+    
+    @objc fileprivate func register() {
+        print("注册")
+    }
+    
+}
+
 // MARK: - 设置界面
 extension WBBaseViewController {
     
@@ -109,6 +121,10 @@ extension WBBaseViewController {
         view.insertSubview(visitorView, belowSubview: navigationBar)
         
         visitorView.visitorInfo = visitorInfoDic
+        
+        // 添加访客视图的监听方法
+        visitorView.loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        visitorView.registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
     }
     
     /// 创建导航条
