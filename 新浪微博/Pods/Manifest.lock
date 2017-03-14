@@ -25,7 +25,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.1.0)
+  - AFNetworking
   - FMDB
   - pop
   - SDWebImage
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 12d4c883f8dac9ffec99c590fb2b9409243adfb8
+PODFILE CHECKSUM: 2124012476873c91bf7d75a4a60c9513cf6d40f5
 
 COCOAPODS: 1.2.0

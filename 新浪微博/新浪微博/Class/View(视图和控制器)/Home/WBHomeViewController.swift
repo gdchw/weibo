@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 // 定义全局常量，尽量设置 private 修饰，负责哪里都可以访问
 private let cellId = "cellId"
 
@@ -19,7 +20,15 @@ class WBHomeViewController: WBBaseViewController {
     /// 加载数据
     override func loadData() {
         
-        print("开始加载数据\(WBNetWorkManager.shard)")
+        print("开始加载数据")
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        let params = ["access_token": "2.00qvd1HEEy97RD0fc577fc07gCPNSC"]
+
+        WBNetWorkManager.shard.request(method: .GET, URLString: urlString, parameters: params) { (json, error) in
+            if error {
+                print("数据 = \(json!)")
+            }
+        }
         
         // 模拟‘延时’加载数据 -> dispatch_after
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
